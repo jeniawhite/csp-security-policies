@@ -1,0 +1,93 @@
+{
+  "rules_mapping": {
+    "eks_3_1_1": {
+      "audit_id": "ensure_permissions",
+      "parameters": {
+        "entity": "kubeconfig",
+        "mode": "644"
+      }
+    },
+    "eks_3_1_3": {
+      "audit_id": "ensure_permissions",
+      "parameters": {
+        "entity": "kubelet-config.json",
+        "mode": "644"
+      }
+    },
+    "k8s_4_1_1": {
+      "audit_id": "ensure_permissions",
+      "parameters": {
+        "entity": "10-kubeadm.conf",
+        "mode": "644"
+      },
+      "fetchers": {
+        "file-system": {
+          "patterns": ["/hostfs/var/lib/kubelet/config.yaml"]
+        }
+      }
+    },
+    "k8s_1_1_5": {
+      "audit_id": "ensure_permissions",
+      "parameters": {
+        "entity": "kube-scheduler.yaml",
+        "mode": "644"
+      }
+    },
+    "k8s_1_1_15": {
+      "audit_id": "ensure_permissions",
+      "parameters": {
+        "entity": "scheduler.conf",
+        "mode": "644"
+      }
+    },
+    "k8s_1_1_7": {
+      "audit_id": "ensure_permissions",
+      "parameters": {
+        "entity": "etcd.yaml",
+        "mode": "644"
+      }
+    },
+    "k8s_1_1_13": {
+      "audit_id": "ensure_permissions",
+      "parameters": {
+        "entity": "admin.conf",
+        "mode": "600"
+      }
+    },
+    "k8s_1_1_1": {
+      "audit_id": "ensure_permissions",
+      "parameters": {
+        "entity": "kube-apiserver.yaml",
+        "mode": "644"
+      }
+    },
+    "k8s_4_1_9": {
+      "audit_id": "ensure_permissions",
+      "parameters": {
+        "entity": "config.yaml",
+        "mode": "644"
+      }
+    },
+    "k8s_4_1_5": {
+      "audit_id": "ensure_permissions",
+      "parameters": {
+        "entity": "kubelet.conf",
+        "mode": "644"
+      }
+    },
+    "k8s_1_1_17": {
+      "audit_id": "ensure_permissions",
+      "parameters": {
+        "entity": "controller-manager.conf",
+        "mode": "644"
+      }
+    },
+    "k8s_1_1_3": {
+      "audit_id": "ensure_permissions",
+      "parameters": {
+        "entity": "kube-controller-manager.yaml",
+        "mode": "644"
+      }
+    }
+  }
+}
